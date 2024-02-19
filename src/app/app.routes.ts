@@ -8,6 +8,24 @@ export const routes: Routes = [
   },
   {
     path: 'loader',
-    loadComponent: () => import('./components/loader/loader.page').then( m => m.LoaderPage)
+    loadComponent: () =>
+      import('./pages/loader/loader.page').then((m) => m.LoaderPage),
+  },
+  {
+    path: 'login',
+    loadComponent: () =>
+      import('./pages/login/login.page').then((m) => m.LoginPage),
+  },
+  {
+    path: 'registration',
+    loadComponent: () =>
+      import('./pages/registration/registration.page').then(
+        (m) => m.RegistrationPage
+      ),
+  },
+  {
+    path: 'home',
+    loadComponent: () =>
+      import('./pages/home/home.page').then((m) => m.HomePage),
   },
 ];

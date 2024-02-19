@@ -1,0 +1,10 @@
+ion-button {
+    &[color="dark"]{
+        text-transform: initial;
+    }
+    padding-left: 16px;
+}
+
+ion-content {
+    --background: var(--ion-color-success);
+}

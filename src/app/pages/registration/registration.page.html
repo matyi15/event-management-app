@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button title=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Regisztráció</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Mi a célod?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-radio-group value="goal">
+        <ion-item>
+          <ion-radio value="demo">DEMO</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-radio value="practice">Gyakorlás</ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Kontakt</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input label="Név" labelPlacement="floating" type="text">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Email" labelPlacement="floating" type="email">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Jelszó" labelPlacement="floating" type="password">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Jelszó megerősítése"
+          labelPlacement="floating"
+          type="password"
+        >
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Telefonszám" labelPlacement="floating" type="tel">
+        </ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-button color="light" size="full" (click)="registration()"> Regisztráció </ion-button>
+</ion-content>
